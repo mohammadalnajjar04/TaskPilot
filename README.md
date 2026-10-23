@@ -1,7 +1,7 @@
 # TaskPilot
 
 <p align="center">
-  <strong>TaskPilot — Task & Project Management Platform</strong>
+  <img src="docs/assets/taskpilot-logo.png" alt="TaskPilot logo" width="220">
 </p>
 
 <p align="center">
@@ -12,34 +12,36 @@
 
 ## Screenshots
 
-> Add your own screenshots to `docs/screenshots/` before publishing this section. The paths below are examples and will not display until the image files exist.
+### Authentication
+
+<table>
+  <tr>
+    <td width="50%" align="center"><strong>Sign In</strong><br><img src="docs/screenshots/login.png" alt="TaskPilot sign in page"></td>
+    <td width="50%" align="center"><strong>Create Account</strong><br><img src="docs/screenshots/register.png" alt="TaskPilot registration page"></td>
+  </tr>
+</table>
 
 ### Dashboard
 
-<!-- ![TaskPilot dashboard](docs/screenshots/dashboard.png) -->
+![TaskPilot dashboard overview](docs/screenshots/dashboard.png)
+
+![TaskPilot dashboard projects and upcoming tasks](docs/screenshots/dashboard-upcoming.png)
 
 ### Projects
 
-<!-- ![TaskPilot projects](docs/screenshots/projects.png) -->
-
-### Project Details & Members
-
-<!-- ![Project details](docs/screenshots/project-details.png) -->
+![TaskPilot projects page](docs/screenshots/projects.png)
 
 ### Tasks
 
-<!-- ![Task management](docs/screenshots/tasks.png) -->
+![TaskPilot task management and filters](docs/screenshots/tasks.png)
 
-### Authentication
+### Categories
 
-<!--
-<table>
-  <tr>
-    <td width="50%"><strong>Sign In</strong><br><img src="docs/screenshots/login.png" alt="TaskPilot sign in"></td>
-    <td width="50%"><strong>Register</strong><br><img src="docs/screenshots/register.png" alt="TaskPilot registration"></td>
-  </tr>
-</table>
--->
+![TaskPilot categories page](docs/screenshots/categories.png)
+
+### Notifications
+
+![TaskPilot notifications page](docs/screenshots/notifications.png)
 
 ## Key Features
 
@@ -125,6 +127,9 @@ TaskPilot/
 │   ├── .env.example
 │   ├── package.json
 │   └── vite.config.js
+├── docs/
+│   ├── assets/           # TaskPilot logo
+│   └── screenshots/      # Application screenshots
 ├── .gitignore
 ├── package.json
 └── README.md
@@ -307,7 +312,7 @@ Check that `.env.example` contains **placeholders only**, not real passwords, da
 - Expand regression and integration test coverage
 - Add end-to-end UI tests
 - Add a documented deployment process
-- Add screenshots and a short demo video
+- Add a short demo video
 - Publish an ERD and database setup guide
 
 ## Author
