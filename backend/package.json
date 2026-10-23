@@ -1,0 +1,44 @@
+{
+  "name": "taskpilot-backend",
+  "version": "1.0.0",
+  "description": "TaskPilot REST API",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "check": "node --check src/app.js && node --check src/config/db.js && node --check src/config/env.js && node --check src/config/swagger.js && node --check src/controllers/authController.js && node --check src/controllers/categoryController.js && node --check src/controllers/dashboardController.js && node --check src/controllers/notificationController.js && node --check src/controllers/projectController.js && node --check src/controllers/projectMemberController.js && node --check src/controllers/taskAttachmentController.js && node --check src/controllers/taskCommentController.js && node --check src/controllers/taskController.js && node --check src/docs/authDocs.js && node --check src/docs/projectDocs.js && node --check src/docs/systemDocs.js && node --check src/docs/taskDocs.js && node --check src/docs/taskInteractionDocs.js && node --check src/middleware/authMiddleware.js && node --check src/middleware/errorHandler.js && node --check src/middleware/uploadTaskAttachment.js && node --check src/middleware/validateRequest.js && node --check src/repositories/activityLogRepository.js && node --check src/repositories/categoryRepository.js && node --check src/repositories/dashboardRepository.js && node --check src/repositories/notificationRepository.js && node --check src/repositories/projectMemberRepository.js && node --check src/repositories/projectRepository.js && node --check src/repositories/taskAttachmentRepository.js && node --check src/repositories/taskCommentRepository.js && node --check src/repositories/taskRepository.js && node --check src/repositories/userRepository.js && node --check src/routes/authRoutes.js && node --check src/routes/categoryRoutes.js && node --check src/routes/dashboardRoutes.js && node --check src/routes/index.js && node --check src/routes/notificationRoutes.js && node --check src/routes/projectMemberRoutes.js && node --check src/routes/projectRoutes.js && node --check src/routes/taskAttachmentRoutes.js && node --check src/routes/taskCommentRoutes.js && node --check src/routes/taskRoutes.js && node --check src/server.js && node --check src/services/authService.js && node --check src/services/categoryService.js && node --check src/services/dashboardService.js && node --check src/services/notificationService.js && node --check src/services/projectMemberService.js && node --check src/services/projectService.js && node --check src/services/taskAttachmentService.js && node --check src/services/taskCommentService.js && node --check src/services/taskService.js && node --check src/utils/asyncHandler.js && node --check src/utils/errors.js && node --check src/utils/jwt.js && node --check src/utils/projectStatus.js && node --check src/utils/taskStatus.js && node --check src/validators/authValidator.js && node --check src/validators/categoryValidator.js && node --check src/validators/dashboardValidator.js && node --check src/validators/notificationValidator.js && node --check src/validators/projectMemberValidator.js && node --check src/validators/projectValidator.js && node --check src/validators/taskAttachmentValidator.js && node --check src/validators/taskCommentValidator.js && node --check src/validators/taskValidator.js",
+    "test": "jest --runInBand",
+    "test:watch": "jest --watch --runInBand"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "verbose": true
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.6.1",
+    "express-validator": "^7.3.2",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.11.0",
+    "multer": "^2.2.0",
+    "pg": "^8.22.0",
+    "swagger-jsdoc": "^6.3.0",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "jest": "^30.4.2",
+    "nodemon": "^3.1.14",
+    "supertest": "^7.2.2"
+  }
+}
